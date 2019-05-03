@@ -22,7 +22,6 @@ html {
 
 #particles-js canvas {
     display: block;
-    vertical-align: bottom;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -43,14 +42,12 @@ html {
 
 
 .main-flex {
-    max-width: 960px;
+    max-width: 66vw;
     min-height: 100vh;
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     font-family: 'Varela Round', sans-serif;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin: 10vh 5vw 10vh 5vw;
 }
 
 .logo {
@@ -65,10 +62,6 @@ html {
     color: #e6af2e;
 }
 
-.email-button {
-    height: 5vh;
-    min-width: 100px;
-}
 
 a {
     color: #ffffff;
@@ -81,9 +74,9 @@ p {
 }
 
 .content {
-    margin-top: 1rem;
+    margin-top: 1vh;
     font-size: 1.7rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1vh;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -122,4 +115,57 @@ li::before {
 
 .link:hover {
     color: #B8C4BB;
+}
+
+.contact-flex {
+    display: flex;
+    width: 50vw;
+}
+
+.contact-item {
+    min-width: 3.5rem;
+    height: 3.5rem;
+    margin: 1vw;
+}
+
+.sm-logos {
+    border-radius: 5px;
+}
+
+.sm-logos:hover {
+    /* Generated from https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: brightness(0) saturate(100%) invert(86%) sepia(7%) saturate(271%) hue-rotate(83deg) brightness(91%) contrast(88%);
+}
+
+.email-button {
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    padding: 0 1.75em;
+    padding-top: 0px;
+    padding-right: 1.75em;
+    padding-bottom: 0px;
+    padding-left: 1.75em;
+    background-color: transparent;
+    border-color: #E6E6E6;
+    color: #E6E6E6;
+    align-self: center;
+    transition: 0.3s;
+    outline: none;
+}
+
+.email-button:hover {
+    border-color: #B8C4BB;
+    color: #B8C4BB;
+}
+
+.exp-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exp-list {
+    max-width: 32vw;
+    min-width: 275px;
 }
