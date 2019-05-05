@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
+        <link href="https://unpkg.com/plyr@3/dist/plyr.css" rel="stylesheet">
         <link href="styles/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -51,14 +52,25 @@
 
                 </div>
 
-                
+                <div class="video-container">
+                    <video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                         <source src="video/tears-of-steel-battle-clip-medium.mp4" type="video/mp4" size="576">
+                            <!-- Fallback for browsers that don't support the <video> element -->
+                            <a href="video/tears-of-steel-battle-clip-medium.mp4" download>Download</a>
+                    </video>
+                </div>
+                <!-- Plyr resources and browser polyfills are specified in the pen settings -->
             </div>
+
         </div>
     </body>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+    <script src="https://unpkg.com/plyr@3"></script>
     <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
     particlesJS.load('particles-js', 'assets/particles.json', function() {
             console.log('callback - particles.js config loaded');
           })
     </script>
+    <script src="scripts/script.js"></script>
 </html>

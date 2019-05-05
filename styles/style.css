@@ -162,3 +162,24 @@ li::before {
     max-width: 32vw;
     min-width: 275px;
 }
+
+.video-container {
+    align-self: center;
+    margin: 50px;
+    min-width: 500px;
+    max-width: 50vw;
+}
+
+/* Plyr customizations */
+
+.plyr__controls {
+    visibility: hidden;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background: transparent;
+}
+
+.plyr__control--overlaid {
+    background: transparent;
+}
