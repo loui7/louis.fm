@@ -50,14 +50,6 @@ html {
     margin: 10vh 5vw 10vh 5vw;
 }
 
-.logo {
-    font-family: 'Qwigley', cursive;
-    font-size: 20vh;
-    line-height: 10vh;
-    align-self: center;
-    margin-bottom: 4vh;
-}
-
 .name {
     color: #e6af2e;
 }
@@ -130,6 +122,7 @@ li::before {
 
 .sm-logos {
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .sm-logos:hover {
