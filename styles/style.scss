@@ -1,10 +1,10 @@
 * {
-  margin: 7.5px 0;
+  margin: 3.75px 0;
   padding: 0;
   box-sizing: border-box;
-  color: #e6e6e6;
+  color: aliceblue;
   font-family: "Varela Round", sans-serif;
-  text-align: center;
+  font-size: 100%;
 }
 
 // html {
@@ -34,20 +34,24 @@
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 10px;
 }
 
 .main-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px 15vw;
+  margin: 0 5vw;
 }
+
 
 h1 {
   color: #e6af2e;
   font-size: 2rem;
   font-weight: 350;
+  text-align: center;
 }
 
 h2 {
@@ -55,33 +59,41 @@ h2 {
   font-size: 1.25rem;
   width: 100%;
   // white-space: nowrap;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 450;
-  text-align: start;
+  color: #fff;
 }
 
 h4 {
   font-size: 1rem;
-  text-align: left;
-  font-weight: normal;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #fff;
 }
 
 p {
   font-size: 1rem;
-  text-align: left;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
 }
 
+.tagline {
+  text-align: center;
+}
+
+.link {
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #b8c4bb;
+}
+
 .contact-flex {
-  align-self: flex-start;
+  margin-top: 0.75rem;
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -90,47 +102,62 @@ a {
 }
 
 .contact-item {
-  width: 2.5rem;
+  width: 3rem;
   height: auto;
   margin: 0 0.25rem 0 0.25rem;
 }
 
 .email-button {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 300;
   // letter-spacing: 0.25em;
   padding: 0 0.5rem;
   background-color: transparent;
-  border: 1.5px solid #e6e6e6;
+  border: 1.5px solid white;
+  color: white;
   align-self: center;
   transition: 0.3s;
   width: 5rem;
   height: 2rem;
   letter-spacing: 0.125rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.email-button:hover {
+  border: 1.5px solid #b8c4bb;
+  color: #b8c4bb;
+  cursor: pointer;
 }
 
 .sm-logos > a {
-  fill: #e6e6e6;
+  fill: #fff;
   transition: 0.3s;
 }
 
 .sm-logos > a:hover {
-  fill: lightgrey;
+  fill: #b8c4bb;
 }
 
 .tech-flex {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .projects-heading {
   color: #7fb800;
-  margin-bottom: 0;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 
 ul {
   list-style: none;
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 .exp-list {
@@ -144,7 +171,6 @@ ul {
 
 li {
   margin: 0;
-  text-align: left;
 }
 
 li::before {
@@ -159,22 +185,23 @@ li::before {
 }
 
 @media (min-width: 768px) {
-  * {
-    text-align: start;
-  }
   .tech-flex {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .flex-element {
-    max-width: 50%;
+    max-width: 47.5%;
+    min-width: 47.5%;
   }
   .projects-heading {
     min-width: 100%;
   }
   .video-flex-element {
-    align-self: center;
-    min-width: 50%;
+    min-width: 47.5%;
+  }
+  ul.flex-element > h2 {
+    font-size: 1rem;
   }
   h2 > br {
     content: " ";
@@ -184,7 +211,7 @@ li::before {
   }
   .main-flex {
     align-items: flex-start;
-    margin-top: 10vh;
+    margin: 0 15vw;
   }
   html {
     font-size: 150%;
@@ -195,9 +222,26 @@ li::before {
   .email-button {
     height: 1.5rem;
   }
-  h4 {
-    font-size: 0.7rem;
-    line-height: 1.6;
+  h1 {
+    margin-left: 15vw;
+    text-align: start;
+  }
+  .tagline {
+    text-align: start;
+    font-weight: 700;
+  }
+  li {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  .container {
+    margin-top: 10vh;
+  }
+  .project-title {
+    text-align: start;
+    min-width: 100%;
   }
 }
 
@@ -226,3 +270,13 @@ li::before {
 }
 
 /* End Plyr customizations */
+
+div.video-container, div.plyr__video-wrapper, div.plyr, div.plyr  video {
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
