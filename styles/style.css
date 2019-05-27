@@ -74,7 +74,6 @@ h2 {
 h4 {
   font-size: 1rem;
   font-weight: 600;
-  text-align: center;
   margin-top: 0.5rem;
   color: #fff;
 }
@@ -167,7 +166,7 @@ a {
   margin-top: 1rem;
 }
 
-.projects-heading {
+.section-heading {
   color: #7fb800;
   font-weight: 700;
   text-align: center;
@@ -206,6 +205,10 @@ li::before {
   margin: 0;
 }
 
+.work-exp-title {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .tech-flex {
     -webkit-box-orient: horizontal;
@@ -222,7 +225,7 @@ li::before {
     max-width: 47.5%;
     min-width: 47.5%;
   }
-  .projects-heading {
+  .full-width {
     min-width: 100%;
   }
   .video-flex-element {
@@ -301,12 +304,27 @@ li::before {
 }
 
 /* End Plyr customizations */
-div.video-container, div.plyr__video-wrapper, div.plyr, div.plyr video {
+div.video-container,
+div.plyr__video-wrapper,
+div.plyr,
+div.plyr video {
   margin: 0;
 }
 
 h3 {
   color: #fff;
   font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+.top-scroller {
+  font-size: 3rem;
+  position: fixed;
+  right: 10px;
+  bottom: -25px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
