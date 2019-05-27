@@ -1,0 +1,282 @@
+* {
+  margin: 3.75px 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: "Varela Round", sans-serif;
+  font-size: 100%;
+}
+
+// html {
+//   // font-size: 50%;
+// }
+
+#particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  margin: 0;
+  background: #1f2041;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5vw;
+}
+
+
+h1 {
+  color: #e6af2e;
+  font-size: 2rem;
+  font-weight: 350;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.25rem;
+  width: 100%;
+  // white-space: nowrap;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.link {
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #b8c4bb;
+}
+
+.contact-flex {
+  margin-top: 0.75rem;
+  display: flex;
+  width: 100%;
+}
+
+.contact-flex > a {
+  align-self: center;
+}
+
+.contact-item {
+  width: 3rem;
+  height: auto;
+  margin: 0 0.25rem 0 0.25rem;
+}
+
+.email-button {
+  font-size: 0.75rem;
+  font-weight: 300;
+  // letter-spacing: 0.25em;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+  align-self: center;
+  transition: 0.3s;
+  width: 5rem;
+  height: 2rem;
+  letter-spacing: 0.125rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.email-button:hover {
+  border: 1.5px solid #b8c4bb;
+  color: #b8c4bb;
+  cursor: pointer;
+}
+
+.sm-logos > a {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.sm-logos > a:hover {
+  fill: #b8c4bb;
+}
+
+.tech-flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.projects-heading {
+  color: #7fb800;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.exp-list {
+  margin-bottom: 1rem;
+}
+
+.sub-list {
+  margin: 0;
+  margin-left: 15px;
+}
+
+li {
+  margin: 0;
+}
+
+li::before {
+  content: "-";
+  margin-right: 0.75rem;
+  font-weight: 400;
+}
+
+.project-title {
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .tech-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-element {
+    max-width: 47.5%;
+    min-width: 47.5%;
+  }
+  .projects-heading {
+    min-width: 100%;
+  }
+  .video-flex-element {
+    min-width: 47.5%;
+  }
+  ul.flex-element > h2 {
+    font-size: 1rem;
+  }
+  h2 > br {
+    content: " ";
+  }
+  h2 > br::after {
+    content: " | ";
+  }
+  .main-flex {
+    align-items: flex-start;
+    margin: 0 15vw;
+  }
+  html {
+    font-size: 150%;
+  }
+  .contact-flex {
+    justify-content: flex-start;
+  }
+  .email-button {
+    height: 1.5rem;
+  }
+  h1 {
+    margin-left: 15vw;
+    text-align: start;
+  }
+  .tagline {
+    text-align: start;
+    font-weight: 700;
+  }
+  li {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  .container {
+    margin-top: 10vh;
+  }
+  .project-title {
+    text-align: start;
+    min-width: 100%;
+  }
+}
+
+/* Plyr customizations */
+
+.plyr__controls {
+  visibility: hidden;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded="true"] {
+  background: transparent;
+}
+
+.plyr__control--overlaid {
+  background: transparent;
+}
+
+.plyr {
+  background: transparent;
+}
+
+.plyr__video-wrapper {
+  background: transparent;
+}
+
+/* End Plyr customizations */
+
+div.video-container, div.plyr__video-wrapper, div.plyr, div.plyr  video {
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
