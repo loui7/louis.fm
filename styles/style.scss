@@ -42,6 +42,14 @@
   margin: 0 5vw;
 }
 
+#services-video {
+  order: 2;
+}
+
+#services-desc {
+  order: 1;
+}
+
 h1 {
   color: #e6af2e;
   font-size: 2rem;
@@ -71,6 +79,7 @@ p {
 a {
   text-decoration: none;
 }
+
 
 .tagline {
   text-align: center;
@@ -119,12 +128,12 @@ a {
   cursor: pointer;
 }
 
-.sm-logos > a {
+.sm-logos {
   fill: #fff;
   transition: 0.3s;
 }
 
-.sm-logos > a:hover {
+.sm-logos:hover {
   fill: #b8c4bb;
 }
 
@@ -139,7 +148,7 @@ a {
   font-weight: 700;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   text-decoration: underline;
 }
 
@@ -178,12 +187,20 @@ li::before {
 }
 
 @media (min-width: 768px) {
+  #services-video {
+    order: 0;
+  }
+  
+  #services-desc {
+    order: 0;
+  }
   .tech-flex {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .flex-element {
+    align-self: center;
     max-width: 47.5%;
     min-width: 47.5%;
   }
@@ -239,6 +256,10 @@ li::before {
     text-align: start;
     min-width: 100%;
   }
+}
+
+.video-flex-element {
+  padding: 10px 0 20px 0;
 }
 
 /* Plyr customizations */

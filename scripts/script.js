@@ -1,7 +1,14 @@
-const player = new Plyr("video", {
+new Plyr('#bestnotes', {
   loop: { active: true },
-  ratio: "128:69"
+  ratio: '128:69',
 });
 
-// Expose player so it can be used from the console
-window.player = player;
+new Plyr('#betterservices', {
+  loop: { active: true },
+  ratio: '128:69',
+});
+
+new Plyr('#juno', {
+  loop: { active: true },
+  ratio: '128:69',
+});
