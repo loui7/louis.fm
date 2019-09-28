@@ -108,8 +108,14 @@ a {
   transition: 0.3s;
 }
 
-.link:hover {
-  color: #b8c4bb;
+.link h3 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.link:hover h3 {
+  color: #f2f3f4;
+  cursor: pointer;
 }
 
 .contact-flex {
@@ -149,8 +155,8 @@ a {
 }
 
 .email-button:hover {
-  border: 1.5px solid #b8c4bb;
-  color: #b8c4bb;
+  border: 1.5px solid #f2f3f4;
+  color: #f2f3f4;
   cursor: pointer;
 }
 
@@ -161,7 +167,7 @@ a {
 }
 
 .sm-logos:hover {
-  fill: #b8c4bb;
+  fill: #f2f3f4;
 }
 
 .tech-flex {
@@ -176,7 +182,7 @@ a {
 }
 
 .section-heading {
-  color: #7fb800;
+  color: #f2f3f4;
   font-weight: 700;
   text-align: center;
   margin-top: 1rem;
@@ -307,6 +313,33 @@ li::before {
 
 .video-flex-element {
   padding: 10px 0 20px 0;
+}
+
+.project-source {
+  padding-top: 7.5px;
+}
+
+.project-source-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.project-source-link:hover .sm-logos {
+  fill: #f2f3f4;
+}
+
+.source-link {
+  padding-left: 7.5px;
+}
+
+.project-source-link:hover .source-link {
+  color: #f2f3f4;
 }
 
 /* Plyr customizations */
